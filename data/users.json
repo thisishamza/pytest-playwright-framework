@@ -1,0 +1,61 @@
+{
+  "test_users": {
+    "standard_user": {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "type": "normal"
+    },
+    "locked_out_user": {
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "type": "locked"
+    },
+    "problem_user": {
+      "username": "problem_user",
+      "password": "secret_sauce",
+      "type": "buggy"
+    },
+    "performance_glitch_user": {
+      "username": "performance_glitch_user",
+      "password": "secret_sauce",
+      "type": "slow"
+    },
+    "error_user": {
+      "username": "error_user",
+      "password": "secret_sauce",
+      "type": "error"
+    },
+    "visual_user": {
+      "username": "visual_user",
+      "password": "secret_sauce",
+      "type": "visual"
+    }
+  },
+  "invalid_users": {
+    "invalid_username": {
+      "username": "invalid_user",
+      "password": "secret_sauce",
+      "error": "Epic sadface: Username and password do not match any user in this service"
+    },
+    "invalid_password": {
+      "username": "standard_user",
+      "password": "wrong_password",
+      "error": "Epic sadface: Username and password do not match any user in this service"
+    },
+    "empty_username": {
+      "username": "",
+      "password": "secret_sauce",
+      "error": "Epic sadface: Username is required"
+    },
+    "empty_password": {
+      "username": "standard_user",
+      "password": "",
+      "error": "Epic sadface: Password is required"
+    },
+    "empty_both": {
+      "username": "",
+      "password": "",
+      "error": "Epic sadface: Username is required"
+    }
+  }
+}

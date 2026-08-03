@@ -1,0 +1,95 @@
+{
+  "valid_data": [
+    {
+      "first_name": "John",
+      "last_name": "Doe",
+      "postal_code": "12345",
+      "description": "Standard valid US data"
+    },
+    {
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "postal_code": "90210",
+      "description": "Valid California zip"
+    },
+    {
+      "first_name": "Test",
+      "last_name": "User",
+      "postal_code": "10001",
+      "description": "Valid New York zip"
+    }
+  ],
+  "invalid_data": [
+    {
+      "first_name": "",
+      "last_name": "Doe",
+      "postal_code": "12345",
+      "error": "Error: First Name is required",
+      "description": "Missing first name"
+    },
+    {
+      "first_name": "John",
+      "last_name": "",
+      "postal_code": "12345",
+      "error": "Error: Last Name is required",
+      "description": "Missing last name"
+    },
+    {
+      "first_name": "John",
+      "last_name": "Doe",
+      "postal_code": "",
+      "error": "Error: Postal Code is required",
+      "description": "Missing postal code"
+    },
+    {
+      "first_name": "",
+      "last_name": "",
+      "postal_code": "",
+      "error": "Error: First Name is required",
+      "description": "All fields empty"
+    }
+  ],
+  "edge_cases": [
+    {
+      "first_name": "A",
+      "last_name": "B",
+      "postal_code": "1",
+      "description": "Single character inputs"
+    },
+    {
+      "first_name": "VeryLongFirstNameThatExceedsNormalLengthExpectations",
+      "last_name": "VeryLongLastNameThatExceedsNormalLengthExpectations",
+      "postal_code": "123456789",
+      "description": "Very long inputs"
+    },
+    {
+      "first_name": "Jean-Pierre",
+      "last_name": "O'Connor",
+      "postal_code": "K1A 0B1",
+      "description": "Special characters and Canadian postal code"
+    },
+    {
+      "first_name": "李",
+      "last_name": "王",
+      "postal_code": "100000",
+      "description": "Unicode characters"
+    }
+  ],
+  "shipping_info": {
+    "standard": "Free Pony Express Delivery",
+    "payment": "SauceCard #31337",
+    "summary_labels": {
+      "payment_info": "Payment Information:",
+      "shipping_info": "Shipping Information:",
+      "price_total": "Price Total",
+      "item_total": "Item total:",
+      "tax": "Tax:",
+      "total": "Total:"
+    }
+  },
+  "confirmation_messages": {
+    "header": "Thank you for your order!",
+    "text": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
+    "back_button": "Back Home"
+  }
+}
